@@ -13,7 +13,7 @@ footer{
     gap: 1vh;
 
     height: 100%;
-    width: 80%;
+    width: 100%;
     margin: 5vh auto;
 
     color: #cecece;
@@ -101,5 +101,18 @@ footer{
 
 
 
+@media (max-width: 870px){
+    
+    #footer-container-email{
+        width: 100%;
+    }
 
+    #footer-email{
+        font-size: 5vw;
+    }
+
+
+
+
+}
 

@@ -25,6 +25,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+    // Play Preview Gifs On Hover
+    const gifs = document.querySelectorAll('.project-img');
+    const projectArea = document.querySelectorAll('.project'); 
+
+    gifs.forEach(gif =>{
+
+        const static = gif.src;
+        const animated = gif.getAttribute('data-gif');
+
+        gif.parentElement.addEventListener('mouseenter', function() {
+            gif.src = animated;
+        });
+
+        gif.parentElement.addEventListener('mouseleave', function(){
+            gif.src = static;
+        });
+
+    });
+
 
     // Carousel Jumpstart
     updateSlidePosition();
@@ -39,9 +58,6 @@ function scrollJump(sectionName){
 
 
 }
-
-
-
 
 
 // Carousel 

@@ -40,7 +40,6 @@ html, body{
 
 #container-all{
     width: 100%;
-    min-width: 480px;
     
     display: flex;
     flex-flow: column nowrap;
@@ -118,3 +117,16 @@ header{
     border: 1px solid var(--text);
 }
 
+
+
+
+
+@media (max-width: 870px){
+
+
+
+
+
+    
+
+}
