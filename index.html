@@ -14,10 +14,10 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="style3.css">
-    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="introduction.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="footer.css">
 
 </head>
 
@@ -36,10 +36,9 @@
                     <button id="button-about"   onclick="scrollJump('container-outer-introduction')">About</button>
                     <button id="button-project" onclick="scrollJump('container-outer-projects')">Project</button>
                     <button id="button-contact" onclick="scrollJump('container-outer-footer')">Contact</button>
-                    <button id="button-language">🇺🇸 EN</button>
+                    <a href="" id="button-language">🇺🇸 EN</a>
                     <button id="button-light"><i class="bi bi-moon"></i></button>
                 </div>
-
 
             </header>
         </div>
@@ -80,56 +79,12 @@
         <!--Projects-->
         <div id="container-outer-projects">
 
-            <span id="projects-title">Projects</span> 
-
-            <div id="projects">
-
-                <button id="button-carrousel-previous" onclick="previousProject()" class="carousel-button"><i class="bi bi-arrow-left"></i></button>
-
-                <div id="carousel-mask">
-
-                    <div id="carrousel-projects">
-
-                        <div class="project">
-                            <span class="project-name">Password Generator</span>
-                            <img class="project-img" src="images/password-preview.png" data-gif="images/password-preview.gif">
-                            <span class="project-description">Strong password generator with settable parameters, such as which characters will be used and the password size.</span>
-                            <div class="project-link-row">
-                                <a class="project-button-live-demo" href="https://cainhurst87.github.io/Simple-Password-Generation/"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
-                                <a class="project-button-view-code" href="https://github.com/cainhurst87/Simple-Password-Generation"><i class="bi bi-github"></i> View Code</a>
-                            </div>
-                        </div>
-    
-                        <div class="project">
-                            <span class="project-name">Bouncy Screensaver</span>
-                            <img class="project-img" src="images/bouncy-preview.png" data-gif="images/bouncy-preview.gif">
-                            <span class="project-description">Screensaver similar to those used in DVD systems, only using an emoji that changes expressions and color on every bounce. </span>
-                            <div class="project-link-row">
-                                <a class="project-button-live-demo" href="https://cainhurst87.github.io/Bouncy-Screensaver/"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
-                                <a class="project-button-view-code" href="https://github.com/cainhurst87/Bouncy-Screensaver"><i class="bi bi-github"></i> View Code</a>
-                            </div>
-                        </div>
-
-                        <div class="project">
-                            <span class="project-name">RGBA Picker</span>
-                            <img class="project-img" src="images/rgba-preview.png" data-gif="images/rgba-preview.gif">
-                            <span class="project-description">RGB color picker with added opacity selection, usings sliders as input and changing background color as it goes.</span>
-                            <div class="project-link-row">
-                                <a class="project-button-live-demo" href="https://cainhurst87.github.io/RGBA-Color-Picker/"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
-                                <a class="project-button-view-code" href="https://github.com/cainhurst87/RGBA-Color-Picker"><i class="bi bi-github"></i> View Code</a>
-                            </div>
-                        </div>
 
 
 
-                    </div>
-
-                </div>
-           
-                <button id="button-carrousel-next" onclick="nextProject()" class="carousel-button"><i class="bi bi-arrow-right"></i></button>
-
-            </div>
         </div>
+
+
 
 
 
@@ -141,7 +96,8 @@
                 <span id="footer-invite">Feel free to reach out to me if <br> you'd like to make contact. </span><br>
 
                 <div id="footer-container-email">
-                    <span id="footer-email"><i class="bi bi-envelope"></i> lealrodriguesjob@gmail.com</span>
+                    <span id="footer-email"><i class="bi bi-envelope"></i></span>
+                    <span id="footer-email-text">lealrodriguesjob@gmail.com</span>
                     <button id="footer-email-copy"><i class="bi bi-copy"></i></button>
                 </div>
 
@@ -159,6 +115,7 @@
     </div>
 
     <script src="script1.js"></script>
+    <script src="carousel.js"></script>
 
 </body>
 

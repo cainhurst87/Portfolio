@@ -1,0 +1,122 @@
+
+#container-outer-footer{
+    width: 100%;
+    min-height: 40vh;
+    background: #0d0f1f;
+}
+
+footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+
+    height: auto;
+    width: 100%;
+    margin: 3vh auto;
+
+    color: #cecece;
+}
+
+#footer-call-me{
+    font-size: 5vh;
+    padding: 2.5vh 3vh;
+    border: 1px solid #cecece;
+    border-radius: 5em;
+}
+
+#footer-invite{
+    font-size: 3vh;
+    text-align: center;
+}
+
+#footer-container-email{
+    margin: 2vh 0;
+}
+
+#footer-email, #footer-email-text, #footer-email-copy{
+    color: #cecece;
+    font-size: 3.5vw;    
+    background: none;
+    border: none;
+}
+
+#footer-email-copy:hover{
+    color: #2477dc;
+}
+
+#footer-contacts{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+    gap: 4vh;
+
+    font-size: 6vw;
+}
+
+#footer-contacts i{
+    text-decoration: none;
+    color: #cecece;
+}
+
+#footer-contacts .bi-github:hover{
+    color: #2477dc;
+}
+
+#footer-contacts .bi-linkedin:hover{
+    color: #2477dc;
+}
+
+#footer-faux-copyright{
+    font-size: 3vh;
+    margin-bottom: 2vh;
+}
+
+#footer-faux-copyright a{
+    text-decoration: none;
+    color: #2477dc;
+    border-bottom: 1px solid transparent;
+}
+
+#footer-faux-copyright a:hover{
+    text-decoration: none;
+    color: #2477dc;
+    border-bottom: 1px solid #2477dc;
+}
+
+@media (max-width: 1000px){
+
+    
+
+}
+
+@media (max-width: 768px){
+
+    #footer-email, #footer-invite{
+        font-size: 5vw;
+    }
+
+    #footer-container-email{
+        margin: 1vh 0 2vh 0;        
+    }
+
+    #footer-email, #footer-email-text, #footer-call-me, #footer-email-copy{
+        font-size: 5vw;
+    }
+
+    #footer-contacts{
+        font-size: 6vh;
+    }
+
+    #footer-faux-copyright{
+        font-size: 4vw;
+        margin-bottom: 0.5vh;
+    }
+
+}
+
+
+
