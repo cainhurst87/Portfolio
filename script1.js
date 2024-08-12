@@ -34,5 +34,10 @@ function scrollJump(sectionName){
 
 }
 
-
+document.getElementById("button-download-cv").addEventListener("click", function(){
+    const link = document.createElement("a");
+    link.href = "Resume_Luiz_Felipe_Leal.pdf";
+    link.download = "Resume_Luiz_Felipe_Leal";
+    link.click();
+});
 

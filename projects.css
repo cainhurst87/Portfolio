@@ -1,0 +1,158 @@
+
+#container-outer-projects{
+    width: 100%;
+    height: auto;
+    margin: 1vh 0 2vh 0;
+    scroll-margin-top: 11vh;
+
+    background: var(--background-grey);
+}
+
+#project-title{
+    min-width: 3vh;
+    width: 90%;
+    padding: 1vh 0;
+    margin: 0 auto;
+    
+}
+
+#project-title span{
+    font-size: 2.5em;
+    color: var(--text-blue);
+}
+
+
+.projects{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.project{
+    flex: 1 1 30%;
+    height: auto;
+    margin: 1vh;
+    box-sizing: border-box;
+    background: var(--project-background);
+    border: 10px solid var(--project-background);
+    border-radius: 1em;
+}
+
+.img-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* 4:3 Aspect Ratio */
+    overflow: hidden;
+}
+
+.img-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.project-name{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+    margin: 2vh 0;
+}
+
+.project-name span{
+    font-size: 150%;
+    text-align: center;
+    color: var(--project-text);
+}
+
+.project-link-row{
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    margin: 2vh 0;
+}
+
+.project-link-row a{
+    font-size: 2em;
+    text-decoration: none;
+    color: var(--project-text);
+    padding: 3%;
+    margin: 1vh 0;
+    border: 1px solid transparent;
+    border-radius: 3em;
+}
+
+.project-link-row a:hover{
+    color: var(--text-blue);
+    border: 1px solid var(--text-blue);
+}
+
+
+
+
+@media (max-width: 3000px){
+
+    .project{
+        flex: 1 1 25%;
+    }
+
+    .project-link-row a{
+        font-size: 8em;
+    }
+
+}
+
+@media (orientation: landscape){
+
+    .project-name{
+        font-size: 0.8em;
+    }
+
+    .project-link-row a{
+        font-size: 1.2em;
+    }
+
+}
+
+@media (orientation: portrait){
+
+    .project{
+        flex: 1 1 50%;
+    }
+
+    .project-link-row a{
+        font-size: 1.7em;
+    }
+
+}
+
+@media (max-width: 500px){
+
+    .project{
+        flex: 1 1 90%;
+    }
+
+    .project-link-row a{
+        font-size: 1.2em;
+    }
+
+}
+
+
+
+

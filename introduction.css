@@ -10,10 +10,10 @@
 #introduction{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
-    width: 85%;
+    width: 70%;
     height: 100%;
     margin: 0 auto;
 }
@@ -26,7 +26,8 @@
     gap: 0.6vh;
 
     white-space: wrap;
-    width: 60%;
+    width: 50%;
+    min-width: 50%;
     height: 100%;
 }
 
@@ -93,8 +94,8 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 
 #container-portrait img{
@@ -106,7 +107,7 @@
 }
 
 
-@media (orientation: portrait){
+@media (max-width: 708px){
     
     #introduction{
         flex-direction: column;
@@ -154,6 +155,7 @@
     }
 
 }
+
 
 
 

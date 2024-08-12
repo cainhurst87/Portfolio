@@ -87,36 +87,67 @@ footer{
     border-bottom: 1px solid #2477dc;
 }
 
-@media (max-width: 1000px){
+@media (orientation: portrait) and (hover: none) and (pointer: coarse){
 
-    
+    #footer-call-me{
+        font-size: 8vw;
+        padding: 2vh 2.5vh;
+    }
 
-}
-
-@media (max-width: 768px){
-
-    #footer-email, #footer-invite{
+    #footer-invite{
         font-size: 5vw;
     }
 
-    #footer-container-email{
-        margin: 1vh 0 2vh 0;        
-    }
-
-    #footer-email, #footer-email-text, #footer-call-me, #footer-email-copy{
-        font-size: 5vw;
+    #footer-email, #footer-email-text, #footer-email-copy{
+        font-size: 5.5vw;
     }
 
     #footer-contacts{
-        font-size: 6vh;
+        font-size: 15vw;
     }
 
     #footer-faux-copyright{
-        font-size: 4vw;
-        margin-bottom: 0.5vh;
+        font-size: 5vw;
+    }
+
+
+}
+
+@media (orientation: landscape) and (hover: none) and (pointer: coarse){
+
+    footer{
+        min-height: 40vh;
+    }
+
+    #footer-call-me{
+        font-size: 3vw;
+        padding: 2vh 2.5vh;
+    }
+
+    #footer-invite{
+        font-size: 3vw;
+    }
+
+    #footer-email, #footer-email-text, #footer-email-copy{
+        font-size: 4.5vw;
+        margin: 0.5em 0;
+    }
+
+    #footer-contacts{
+        font-size: 10vw;
+        gap: 0.3em;
+        margin-bottom: 0.3em;
+    }
+
+    #footer-faux-copyright{
+        font-size: 2vw;
     }
 
 }
+
+
+
+
 
 
 
